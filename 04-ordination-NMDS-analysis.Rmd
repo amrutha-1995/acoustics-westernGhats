@@ -207,6 +207,11 @@ legend("bottomright", c("overall", "Benchmark", "Passive", "Active"), pch = c(19
 plot(curve_Passive, add = TRUE, col = "red")
 plot(curve_Active, add = TRUE, col = "blue")
 
+
+#TO save the plot as png
+dev.copy(png, "specaccumu-site and visit wise.png", width=8, height=6, units="in", res= 500)
+dev.off()
+
 ```
 
 
